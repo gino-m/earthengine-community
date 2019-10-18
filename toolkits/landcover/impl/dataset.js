@@ -116,9 +116,8 @@ Dataset.prototype.createTemporalComposites = function(
   interval = args.interval;
   intervalUnits = args.intervalUnits;
   reducer = args.reducer;
-  this.collection_ = Composites.createTemporalComposites(
+  return Composites.createTemporalComposites(
       this.collection_, startDate, count, interval, intervalUnits, reducer);
-  return this;
 };
 
 /**
